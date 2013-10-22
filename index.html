@@ -8,47 +8,70 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+
+       <script src="words.json"></script>
+       <script src="words.js"></script>
+
+       <script>
+         var myObject = JSON.parse(myDictionary);
+       </script>
+
   </head>
   <body>
-    <h1>Words - Jumble Solver!</h1>
+    <h1>Jumble Solver!</h1>
     <div class="container">
 
-
-<div class="row">
-        <div class="col-lg-4 col-sm-4 col-2">
-          <h2>Heading</h2>
-          <li>
-          <p>A Few words here </p>
-          <input id="textbox" type="text" />
-          <input id="outputbox" type="text" />
-          <p><a class="btn btn-primary" href="#">Solve &raquo;</a></p>
-          </li>
+      <div class="row">
+        <div class="col-md-2 col-sm-2">
+          <p>Type your scrambled word here </p>
         </div>
+
+        <div class="col-md-2 col-sm-2">
+          <p><input id="textbox" type="text"/></p>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-4">
+            <p><a class="btn btn-primary" onclick="reactToClick()"
+            href="#">Solve &raquo;</a></p>
+        </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-2 col-2">
+          <input id="outputbox" type="text" />
+        </div>
+        <div class="col-lg-4 col-sm-2 col-2">
+        </div>
+      </div>
+
+<!--
+      <div class="row">
         <div class="col-lg-4 col-sm-2 col-2">
           <h2>Heading</h2>
           <p>Just a word or two </p>
           <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
-       </div>
+        </div>
+      </div>
+    </div>
+-->        
+
+        <!-- Site footer -->
+
+        <!-- <div class="footer"> -->
+        <!--   <li> -->
+        <!--     <p>&copy; Company 2013</p> -->
+        <!--   </li> -->
+        <!-- </div> -->
+
+      </div> <!-- /container -->
 
 
-      <!-- Site footer -->
 
-          <!-- <div class="footer"> -->
-          <!--   <li> -->
-          <!--     <p>&copy; Company 2013</p> -->
-          <!--   </li> -->
-          <!-- </div> -->
-
-</div> <!-- /container -->
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="//code.jquery.com/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
