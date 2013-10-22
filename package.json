@@ -1,0 +1,22 @@
+{
+  "name": "Words",
+  "version": "0.0.1",
+  "description": "Solve Jumbled words",
+  "main": "web.js",
+  "dependencies": {
+    "express": "~3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Traugott",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jatraug/Words.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jatraug/Words/issues"
+  }
+}
